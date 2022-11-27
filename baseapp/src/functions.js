@@ -8,4 +8,9 @@ export function difference(numA, numB) {
 export function division(numA, numB) {
     return numA / numB;
 }
+//Function 3
+export function multipyBythree(number) {
+    return number*3;
+}
+
 
