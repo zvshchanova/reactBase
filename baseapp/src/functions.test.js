@@ -9,7 +9,9 @@ test('testing multipyBythree', () =>{
 
 test ('testing difference', () => {
     expect (difference(8, 2)).toBe(6);
-
+    expect (difference(3, 4)).toBe(-1);
+    expect (difference(3, 3)).toBe(0);
+    expect (difference(-4, -4)).toBe(0);
 })
 
 test ('testing division', () => {
