@@ -21,6 +21,7 @@ export function timeOfDay(date) {
 /* В этой функции есть пара ошибок. Протестируйте функцию и исправьте недочеты.
 Убедитесь что вы получили именно тот список проверяя уникальный предмет из списка 
 https://jestjs.io/docs/using-matchers#arrays-and-iterables */
+
 export function getShoppingListByNum(listNum) {
 
     const shoppingList1 = [
