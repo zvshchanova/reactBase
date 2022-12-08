@@ -1,11 +1,14 @@
+import React from 'react'
 import logo from './logo.svg';
 import './App.css';
-import {FetchData} from './FetchData';
+// import {FetchData} from './FetchData';
+import Fetch from "./fetch";
 
 function App() {
   return (
     <div className="App">
-            <FetchData />
+            {/* <FetchData /> */}
+            <Fetch url={"https://www.greetingsapi.com/random"}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

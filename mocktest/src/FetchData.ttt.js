@@ -4,15 +4,15 @@ import { render, screen } from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect";
 import {FetchData} from './FetchData';
 
-const server = setupServer(
-    rest.get("https://www.greetingsapi.com/random", (req, res, ctx) => {
-    //   return res(ctx.json({ data: "return this string" }));
-    // return res(ctx.json({type: 'hello'}))
-      return res(ctx.status(200));
-    })
-  );
+
 
   describe("<FetchData />", () => {
+    const server = setupServer(
+        rest.get("https://www.greetingsapi.com/random", (req, res, ctx) => {
+        return res(ctx.status(200), ctx.json({data: {type: 'hello'}}));
+        })
+      );
+
     beforeAll(() => server.listen());
     afterAll(() => server.close());
 
